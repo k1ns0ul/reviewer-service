@@ -107,7 +107,7 @@ postgresql://postgres:postgres@localhost:5433/reviewer_service?sslmode=disable
 
 
 ### Структура проекта
-
+```
 reviewer-service/
 ├── cmd/
 │   └── api/                     # Точка входа приложения (main.go)
@@ -138,7 +138,7 @@ reviewer-service/
 ├── docker-compose.yml           # Конфигурация Docker Compose
 ├── Makefile                     # Команды для упрощения разработки
 └── README.md                    # Документация
-
+```
 
 ### Переменные окружения
 
