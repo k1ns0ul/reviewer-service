@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS teams (
+    name VARCHAR(255) PRIMARY KEY,
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_teams_created_at ON teams(created_at);
