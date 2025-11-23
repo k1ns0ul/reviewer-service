@@ -110,34 +110,34 @@ postgresql://postgres:postgres@localhost:5433/reviewer_service?sslmode=disable
 
 reviewer-service/
 ├── cmd/
-│   └── api/                 # Точка входа приложения (main.go)
+│   └── api/                     # Точка входа приложения (main.go)
 ├── internal/
-│   ├── application/         # Сервисный слой (бизнес-логика)
+│   ├── application/             # Сервисный слой (бизнес-логика)
 │   │   └── service/
-│   ├── config/              # Конфигурация
-│   ├── domain/              # Модели, enum'ы, интерфейсы, ошибки
+│   ├── config/                  # Конфигурация
+│   ├── domain/                  # Модели, enum'ы, интерфейсы, ошибки
 │   │   ├── constants/
 │   │   ├── enums/
 │   │   ├── errors/
 │   │   ├── interfaces/
 │   │   └── models/
-│   ├── entrypoints/         # Входные точки (HTTP)
+│   ├── entrypoints/             # Входные точки (HTTP)
 │   │   └── http/
-│   └── infrastructure/      # Репозитории и адаптеры
+│   └── infrastructure/          # Репозитории и адаптеры
 │       └── repository/
 ├── pkg/
-│   ├── database/            # Подключение к PostgreSQL
-│   └── logger/              # Логирование
-├── migrations/              # SQL миграции
-├── tests/                   # Тесты
-│   ├── unit/                # Unit-тесты
-│   ├── integration/         # Интеграционные тесты (при наличии)
-│   └── load/                # Нагрузочные бенчмарки
-├── scripts/                 # Скрипты для контейнеров/infra
-├── Dockerfile               # Сборка Docker-образа
-├── docker-compose.yml       # Конфигурация Docker Compose
-├── Makefile                 # Команды для упрощения разработки
-└── README.md                # Документация
+│   ├── database/                # Подключение к PostgreSQL
+│   └── logger/                  # Логирование
+├── migrations/                  # SQL миграции
+├── tests/                       # Тесты
+│   ├── unit/                    # Unit-тесты
+│   ├── integration/             # Интеграционные тесты
+│   └── load/                    # Нагрузочные бенчмарки
+├── scripts/                     # Скрипты для контейнеров/infra
+├── Dockerfile                   # Сборка Docker-образа
+├── docker-compose.yml           # Конфигурация Docker Compose
+├── Makefile                     # Команды для упрощения разработки
+└── README.md                    # Документация
 
 
 ### Переменные окружения
